@@ -10,7 +10,8 @@ const currentCalculationOutput = document.getElementById('current-calculation');
 
   let res= 0;
  currentResultOutput.textContent=res;
-
+ var num1=parseInt(input1.value);
+ var num2 = parseInt(input2.value)
   
    
    addbtn.addEventListener("click",add);
@@ -37,7 +38,7 @@ function sub(){
 
 function multiply(){
 
-    var mulres=parseInt(input1.value)*parseInt(input2.value);
+    var mulres=num1*num2;
     console.log(mulres);
     currentResultOutput.textContent=mulres;
   
@@ -45,8 +46,9 @@ function multiply(){
 devidebtn.addEventListener('click',devide);
 
 function devide(){
-  
-    var devres=parseInt(input1.value)/parseInt(input2.value);
+  var num1=parseInt(input1.value);
+  var num2 = parseInt(input2.value);
+    var devres=num1/num2;
     console.log(devres);
     currentResultOutput.textContent=devres;
   
